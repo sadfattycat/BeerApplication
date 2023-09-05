@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/img_2"
+    >
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:layout_marginTop="40dp"
+        android:background="#CCCCFF"
+        android:entries="@array/vine_colors"
+        android:minHeight="48dp">
+
+    </Spinner>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_gravity="center"
+        android:text="@string/find_vine"
+        android:layout_margin="16dp"
+        android:backgroundTint="#6666CC"
+        android:textColor="@color/black"
+        android:onClick="onClickFindVine"
+        >
+
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/no_vine_selected"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#CCCCFF"
+        android:id="@+id/textVine"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/snackbtn"
+        android:layout_marginTop="10dp"
+        android:text="@string/want_snacks"
+        android:backgroundTint="#003366"
+        android:layout_gravity="center"
+        android:onClick="onClickVineSnacks"
+        >
+
+    </Button>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:text="@string/no_snacks_now"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#CCCCFF"
+        android:background="@drawable/rounded_corners"
+        android:id="@+id/textSnacks"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/beerbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginBottom="150dp"
+            android:backgroundTint="#6666CC"
+            android:layout_marginStart="0dp"
+            android:text="Beer"
+            android:textColor="@color/black"
+            android:onClick="onClickBeerActivity"
+            android:visibility="visible">
+
+        </Button>
+
+        <Button
+            android:id="@+id/vinebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginBottom="150dp"
+            android:layout_marginStart="55dp"
+            android:backgroundTint="#6666CC"
+            android:text="Vine"
+            android:textColor="@color/black"
+            android:visibility="visible">
+
+        </Button>
+
+        <Button
+            android:id="@+id/vodkabtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginBottom="150dp"
+            android:backgroundTint="#6666CC"
+            android:text="Vodka"
+            android:textColor="@color/black"
+            android:onClick="onClickVodkaActivity"
+            android:visibility="visible">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

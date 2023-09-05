@@ -39,16 +39,94 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="@string/no_beer_selected"
-        android:background="#FFFFCC"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#FFFFCC"
         android:id="@+id/textView"
         android:layout_gravity="center"
-        android:layout_margin="16dp"
+        android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/snackbtn"
+        android:layout_marginTop="10dp"
+        android:text="@string/want_snacks"
+        android:backgroundTint="#009933"
+        android:layout_gravity="center"
+        android:onClick="onClickSnaks"
+        >
+
+    </Button>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:text="@string/no_snacks_now"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#FFFFCC"
+        android:id="@+id/textSnacks"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/beerbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="#99CC66"
+        android:layout_marginStart="0dp"
+        android:text="Beer"
+        android:textColor="@color/black"
+        android:visibility="visible">
+
+    </Button>
+
+    <Button
+        android:id="@+id/vinebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginStart="55dp"
+        android:backgroundTint="#99CC66"
+        android:text="Vine"
+        android:onClick="onClickVineActivity"
+        android:textColor="@color/black"
+        android:visibility="visible">
+
+    </Button>
+
+        <Button
+            android:id="@+id/vodkabtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginBottom="150dp"
+            android:backgroundTint="#99CC66"
+            android:text="Vodka"
+            android:textColor="@color/black"
+            android:onClick="onClickVodkaActivity"
+            android:visibility="visible">
+
+        </Button>
+
+    </LinearLayout>
 
 </LinearLayout>

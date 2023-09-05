@@ -3,12 +3,60 @@
     <string name="find_beer">Find beer</string>
     <string name="no_beer_selected">No beer selected</string>
     <string name="gottle">Gottle of geer</string>
+    <string name="find_vine">Find vine</string>
+    <string name="no_vine_selected">No vine selected</string>
+    <string name="find_vodka">Find vodka</string>
+    <string name="no_vodka_selected">No vodka selected</string>
+    <string name="want_snacks">Want some snacks?</string>
+    <string name="no_snacks_now">There are no snacks now</string>
 
     <string-array name="beer_colors">
         <item>light</item>
         <item>amber</item>
         <item>brown</item>
         <item>dark</item>
+    </string-array>
+
+    <string-array name="vine_colors">
+        <item>white</item>
+        <item>red</item>
+        <item>rose</item>
+        <item>vermouth</item>
+        <item>sparkling</item>
+    </string-array>
+
+    <string-array name="vodka_types">
+        <item>plain</item>
+        <item>flavored</item>
+        <item>fruit</item>
+        <item>grain</item>
+    </string-array>
+
+    <string-array name="beersnacks">
+        <item>Chips</item>
+        <item>Sausages</item>
+        <item>French fries</item>
+        <item>Hot chicken wings</item>
+        <item>Pizza</item>
+        <item>Salted nuts</item>
+    </string-array>
+
+    <string-array name="vinesnacks">
+        <item>Cheese and crackers</item>
+        <item>Cheesy garlic bread</item>
+        <item>Trail mix</item>
+        <item>Bruschetta</item>
+        <item>Pizza</item>
+        <item>Onion rings</item>
+    </string-array>
+
+    <string-array name="vodkasnacks">
+        <item>Hot meat and fish dishes</item>
+        <item>Potatoes</item>
+        <item>Salted cucumber</item>
+        <item>Sandwiches</item>
+        <item>Red caviar</item>
+        <item>Barbecue</item>
     </string-array>
 
 </resources>
